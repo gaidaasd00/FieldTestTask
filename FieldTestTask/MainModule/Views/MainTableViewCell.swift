@@ -17,7 +17,7 @@ final class MainTableViewCell: UITableViewCell {
         label.numberOfLines = 0
         return label
     }()
-   
+   //id cell
     static var mainTableViewID = "mainTableViewID"
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -40,6 +40,7 @@ final class MainTableViewCell: UITableViewCell {
     }
 }
 
+//MARK: - Set Constrains
 extension MainTableViewCell {
     private func setConstrains() {
         NSLayoutConstraint.activate([
