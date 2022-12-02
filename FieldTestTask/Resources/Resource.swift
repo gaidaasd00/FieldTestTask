@@ -5,7 +5,7 @@
 //  Created by Alexey Gaidykov on 01.12.2022.
 //
 
-import Foundation
+import UIKit
 
 enum Resource {
     enum NameFields: String, CaseIterable {
@@ -14,5 +14,11 @@ enum Resource {
         case thirdName = "Отчесво"
         case dateBirthday = "Дата рождения"
         case gender = "Пол"
+    }
+    
+    enum Fonts {
+        static func avenirNextRegular(with size: CGFloat) -> UIFont? {
+            UIFont(name: "Avenir Next", size: size)
+        }
     }
 }

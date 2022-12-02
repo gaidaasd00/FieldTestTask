@@ -11,6 +11,8 @@
 		CC0491CF29390BF2008AB3D6 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0491CE29390BF2008AB3D6 /* MainTableViewCell.swift */; };
 		CC0491D329390E85008AB3D6 /* UIview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0491D229390E85008AB3D6 /* UIview+Extension.swift */; };
 		CC0491D929391583008AB3D6 /* EditingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0491D829391583008AB3D6 /* EditingTableViewController.swift */; };
+		CC70A94C293A67C700165269 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC70A94B293A67C700165269 /* TextViewTableViewCell.swift */; };
+		CC70A94E293A695D00165269 /* NameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC70A94D293A695D00165269 /* NameTextView.swift */; };
 		CCF19C252938FE0300940F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF19C242938FE0300940F97 /* AppDelegate.swift */; };
 		CCF19C292938FE0300940F97 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF19C282938FE0300940F97 /* MainTableViewController.swift */; };
 		CCF19C2E2938FE0700940F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF19C2D2938FE0700940F97 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		CC0491CE29390BF2008AB3D6 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		CC0491D229390E85008AB3D6 /* UIview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIview+Extension.swift"; sourceTree = "<group>"; };
 		CC0491D829391583008AB3D6 /* EditingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingTableViewController.swift; sourceTree = "<group>"; };
+		CC70A94B293A67C700165269 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
+		CC70A94D293A695D00165269 /* NameTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextView.swift; sourceTree = "<group>"; };
 		CCF19C212938FE0300940F97 /* FieldTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF19C242938FE0300940F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCF19C282938FE0300940F97 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		CC0491D42939151B008AB3D6 /* EditingModule */ = {
 			isa = PBXGroup;
 			children = (
+				CC70A949293A679500165269 /* Views */,
 				CC0491D52939154E008AB3D6 /* Controllers */,
 			);
 			path = EditingModule;
@@ -87,6 +92,23 @@
 				CC0491D829391583008AB3D6 /* EditingTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CC70A949293A679500165269 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC70A94A293A67A300165269 /* Cells  */,
+				CC70A94D293A695D00165269 /* NameTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC70A94A293A67A300165269 /* Cells  */ = {
+			isa = PBXGroup;
+			children = (
+				CC70A94B293A67C700165269 /* TextViewTableViewCell.swift */,
+			);
+			path = "Cells ";
 			sourceTree = "<group>";
 		};
 		CCF19C182938FE0300940F97 = {
@@ -228,6 +250,8 @@
 				CCF19C292938FE0300940F97 /* MainTableViewController.swift in Sources */,
 				CC0491CF29390BF2008AB3D6 /* MainTableViewCell.swift in Sources */,
 				CC0491D329390E85008AB3D6 /* UIview+Extension.swift in Sources */,
+				CC70A94C293A67C700165269 /* TextViewTableViewCell.swift in Sources */,
+				CC70A94E293A695D00165269 /* NameTextView.swift in Sources */,
 				CCF19C252938FE0300940F97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,12 +16,12 @@ final class EditingTableViewController: UITableViewController {
         setupViews()
         
         //register cell
-        tableView.register(MainTableViewCell.self, forCellReuseIdentifier: MainTableViewCell.mainTableViewID)
+        tableView.register(TextViewTableViewCell.self, forCellReuseIdentifier: TextViewTableViewCell.textViewTableViewID)
     }
     //setup all view
     private func setupViews() {
-        title = "Просмотр"
-        view.backgroundColor = .green
+        title = "Редактирование"
+        view.backgroundColor = .white
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Сохранить", style: .plain, target: self, action: #selector(editingTapped))
     }
     @objc private func editingTapped() {
@@ -37,9 +37,10 @@ extension EditingTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.mainTableViewID, for: indexPath) as? MainTableViewCell else { return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TextViewTableViewCell.textViewTableViewID, for: indexPath) as? TextViewTableViewCell else { return UITableViewCell()}
         
         let nameField = Resource.NameFields.allCases[indexPath.row].rawValue
+        cell.nameTexViewDelegate = self
         cell.configure(name: nameField)
         return cell
     }
@@ -48,5 +49,12 @@ extension EditingTableViewController {
 extension EditingTableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         indexPath.row == 1 ? UITableView.automaticDimension : 44
+    }
+}
+
+extension EditingTableViewController: NameTextViewProtocol {
+    func changeSize() {
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
 }
