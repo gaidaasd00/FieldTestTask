@@ -15,7 +15,7 @@ final class DatePickerTableViewCell: UITableViewCell {
     private let datePicker: UIDatePicker = {
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
-        datePicker.minimumDate = Date()
+        datePicker.maximumDate = Date()
         datePicker.subviews[0].subviews[0].subviews[0].alpha = 0
         
         return datePicker

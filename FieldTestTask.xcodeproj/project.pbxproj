@@ -14,6 +14,9 @@
 		CC70A94C293A67C700165269 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC70A94B293A67C700165269 /* TextViewTableViewCell.swift */; };
 		CC70A94E293A695D00165269 /* NameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC70A94D293A695D00165269 /* NameTextView.swift */; };
 		CC916399293E235F00BD07DC /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC916398293E235F00BD07DC /* DatePickerTableViewCell.swift */; };
+		CC91639B293E278400BD07DC /* PickerViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91639A293E278400BD07DC /* PickerViewTableViewCell.swift */; };
+		CC91639D293E28DA00BD07DC /* GenderPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91639C293E28DA00BD07DC /* GenderPickerView.swift */; };
+		CC91639F293E2BA700BD07DC /* GenderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC91639E293E2BA700BD07DC /* GenderTextField.swift */; };
 		CCF19C252938FE0300940F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF19C242938FE0300940F97 /* AppDelegate.swift */; };
 		CCF19C292938FE0300940F97 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF19C282938FE0300940F97 /* MainTableViewController.swift */; };
 		CCF19C2E2938FE0700940F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF19C2D2938FE0700940F97 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 		CC70A94B293A67C700165269 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
 		CC70A94D293A695D00165269 /* NameTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextView.swift; sourceTree = "<group>"; };
 		CC916398293E235F00BD07DC /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		CC91639A293E278400BD07DC /* PickerViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewTableViewCell.swift; sourceTree = "<group>"; };
+		CC91639C293E28DA00BD07DC /* GenderPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPickerView.swift; sourceTree = "<group>"; };
+		CC91639E293E2BA700BD07DC /* GenderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderTextField.swift; sourceTree = "<group>"; };
 		CCF19C212938FE0300940F97 /* FieldTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF19C242938FE0300940F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCF19C282938FE0300940F97 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,8 @@
 			children = (
 				CC70A94A293A67A300165269 /* Cells  */,
 				CC70A94D293A695D00165269 /* NameTextView.swift */,
+				CC91639C293E28DA00BD07DC /* GenderPickerView.swift */,
+				CC91639E293E2BA700BD07DC /* GenderTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +118,7 @@
 			children = (
 				CC70A94B293A67C700165269 /* TextViewTableViewCell.swift */,
 				CC916398293E235F00BD07DC /* DatePickerTableViewCell.swift */,
+				CC91639A293E278400BD07DC /* PickerViewTableViewCell.swift */,
 			);
 			path = "Cells ";
 			sourceTree = "<group>";
@@ -252,10 +261,13 @@
 				CC0491D929391583008AB3D6 /* EditingTableViewController.swift in Sources */,
 				CCF19C292938FE0300940F97 /* MainTableViewController.swift in Sources */,
 				CC0491CF29390BF2008AB3D6 /* MainTableViewCell.swift in Sources */,
+				CC91639D293E28DA00BD07DC /* GenderPickerView.swift in Sources */,
 				CC0491D329390E85008AB3D6 /* UIview+Extension.swift in Sources */,
 				CC70A94C293A67C700165269 /* TextViewTableViewCell.swift in Sources */,
+				CC91639B293E278400BD07DC /* PickerViewTableViewCell.swift in Sources */,
 				CC70A94E293A695D00165269 /* NameTextView.swift in Sources */,
 				CCF19C252938FE0300940F97 /* AppDelegate.swift in Sources */,
+				CC91639F293E2BA700BD07DC /* GenderTextField.swift in Sources */,
 				CC916399293E235F00BD07DC /* DatePickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
