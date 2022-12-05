@@ -43,6 +43,8 @@ final class MainTableViewCell: UITableViewCell {
     }
 }
 
+
+//Установка колнстрейнтов
 //MARK: - Set Constrains
 extension MainTableViewCell {
     private func setConstrains() {
