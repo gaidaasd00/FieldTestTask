@@ -17,6 +17,7 @@ final class EditingTableViewController: UITableViewController {
         
         //register cell
         tableView.register(TextViewTableViewCell.self, forCellReuseIdentifier: TextViewTableViewCell.textViewTableViewID)
+        tableView.register(DatePickerTableViewCell.self, forCellReuseIdentifier: DatePickerTableViewCell.datePickerID)
     }
     //setup all view
     private func setupViews() {
@@ -37,12 +38,25 @@ extension EditingTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TextViewTableViewCell.textViewTableViewID, for: indexPath) as? TextViewTableViewCell else { return UITableViewCell()}
-        
         let nameField = Resource.NameFields.allCases[indexPath.row].rawValue
-        cell.nameTexViewDelegate = self
-        cell.configure(name: nameField)
-        return cell
+
+        switch indexPath.row {
+        case 0...2:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TextViewTableViewCell.textViewTableViewID, for: indexPath) as? TextViewTableViewCell else { return UITableViewCell() }
+            cell.nameTexViewDelegate = self
+            if indexPath.row == 1 {
+                cell.configure(name: nameField, scrollEnable: false)
+            } else {
+                cell.configure(name: nameField, scrollEnable: true)
+            }
+            return cell
+        case 3:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: DatePickerTableViewCell.datePickerID, for: indexPath) as? DatePickerTableViewCell else { return UITableViewCell() }
+            cell.configure(name: nameField)
+            return cell
+        default:
+            return UITableViewCell()
+        }
     }
 }
     //MARK: - UITableViewDelegate

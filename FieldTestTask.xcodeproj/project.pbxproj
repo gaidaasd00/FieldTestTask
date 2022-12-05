@@ -13,6 +13,7 @@
 		CC0491D929391583008AB3D6 /* EditingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0491D829391583008AB3D6 /* EditingTableViewController.swift */; };
 		CC70A94C293A67C700165269 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC70A94B293A67C700165269 /* TextViewTableViewCell.swift */; };
 		CC70A94E293A695D00165269 /* NameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC70A94D293A695D00165269 /* NameTextView.swift */; };
+		CC916399293E235F00BD07DC /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC916398293E235F00BD07DC /* DatePickerTableViewCell.swift */; };
 		CCF19C252938FE0300940F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF19C242938FE0300940F97 /* AppDelegate.swift */; };
 		CCF19C292938FE0300940F97 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF19C282938FE0300940F97 /* MainTableViewController.swift */; };
 		CCF19C2E2938FE0700940F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF19C2D2938FE0700940F97 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		CC0491D829391583008AB3D6 /* EditingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingTableViewController.swift; sourceTree = "<group>"; };
 		CC70A94B293A67C700165269 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
 		CC70A94D293A695D00165269 /* NameTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextView.swift; sourceTree = "<group>"; };
+		CC916398293E235F00BD07DC /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
 		CCF19C212938FE0300940F97 /* FieldTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF19C242938FE0300940F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCF19C282938FE0300940F97 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				CC70A94B293A67C700165269 /* TextViewTableViewCell.swift */,
+				CC916398293E235F00BD07DC /* DatePickerTableViewCell.swift */,
 			);
 			path = "Cells ";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				CC70A94C293A67C700165269 /* TextViewTableViewCell.swift in Sources */,
 				CC70A94E293A695D00165269 /* NameTextView.swift in Sources */,
 				CCF19C252938FE0300940F97 /* AppDelegate.swift in Sources */,
+				CC916399293E235F00BD07DC /* DatePickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
